@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head', {page: page}); %>
+</head>
+<body>
+    <div id="layoutGrid">
+        <div id="layoutNavbar">
+            <%- include('partials/navbar', {page: page}) %>
+        </div>
+        <div id="layoutContent">
+            <%- include(`pages/${page}`) %>
+        </div>
+    </div>
+</body>
+</html>

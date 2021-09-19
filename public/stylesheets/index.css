@@ -1,0 +1,33 @@
+#indexGrid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+        "name name name"
+        ". logo ."
+        ". . .";
+    max-width: 100vw;
+    height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
+}
+
+#name {
+    grid-area: name;
+    font-family: 'Rock Salt', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: logo;
+}
+
+#logo > img {
+    height: 100%;
+    width: auto;
+}
