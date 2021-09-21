@@ -1,0 +1,109 @@
+#aboutGrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    grid-template-areas: 'about members';
+    width: 100vw;
+    height: calc(100vh - 100px);
+    padding: 0 5% 0 5%;
+}
+
+#aboutBand {
+    grid-area: about;
+    display: flex;
+    justify-content: center;
+    margin: 10% 10% 0 10%;
+}
+
+#bandMembers {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
+    padding: 5% 5% 5% 0;
+}
+
+.bandMemberCell {
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+#bandMemberRyanHaley {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+#bandMemberJoey {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: .25s;
+}
+
+#bandMemberRyanDrew {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: .5s;
+}
+
+#bandMemberCormac {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: .75s;
+}
+
+.bandMemberName {
+    font-family: 'Permanent Marker', cursive;
+    margin-left: 10%;
+}
+
+.bandMemberNameLink {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
+.bandMemberNameLink:hover {
+    color: black;
+    opacity: 1;
+}
+
+.instrument {
+    margin-left: 10%;
+}
+
+.slantedDiv {
+    -moz-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    -ms-transform: skew(-10deg, 0deg);
+    transform: skew(-10deg, 0deg);
+}
+
+.unslantDiv {
+    -moz-transform: skew(10deg, 0deg);
+    -webkit-transform: skew(10deg, 0deg);
+    -o-transform: skew(10deg, 0deg);
+    -ms-transform: skew(10deg, 0deg);
+    transform: skew(10deg, 0deg);
+}
+
+@keyframes slideLeft {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
