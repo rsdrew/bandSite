@@ -22,11 +22,19 @@ var aboutRouter = require('./routes/about');
 var musicRouter = require('./routes/music');
 var showsRouter = require('./routes/shows');
 var contactRouter = require('./routes/contact');
+var ryanHaleyRouter = require('./routes/ryanHaley');
+var joeySerraRouter = require('./routes/joeySerra');
+var ryanDrewRouter = require('./routes/ryanDrew');
+var cormacEganRouter = require('./routes/cormacEgan');
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/music', musicRouter);
 app.use('/shows', showsRouter);
 app.use('/contact', contactRouter);
+app.use('/ryanHaley', ryanHaleyRouter);
+app.use('/joeySerra', joeySerraRouter);
+app.use('/ryanDrew', ryanDrewRouter);
+app.use('/cormacEgan', cormacEganRouter);
 
 
 // catch 404 and forward to error handler

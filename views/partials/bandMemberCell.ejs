@@ -1,16 +1,7 @@
-<!-- <div id="bandMember<%= bandMemberID %>" class="bandMemberCell" style="background-image: url('/images/<%= bandMemberImage %>'); ">
-    <a class="bandMemberNameLink fill" style="background: rgba(<%= backgroundColorRGB %>,0.5);" href="/about/<%= bandMemberURL %>">
-        <div class="unslantDiv">
-            <h3 class="bandMemberName"><%= bandMemberName %></h3>
-            <p class="instrument"><%= instrument %></p>
-        </div>
-    </a>
-</div> -->
-
 <div id="bandMember<%= bandMemberID %>" class="bandMemberCell">
     <div class="bandMemberCellBackgroundImage unslantDiv" style="background-image: url('/images/<%= bandMemberImage %>');">
-    <a class="bandMemberNameLink fill" style="background: rgba(<%= backgroundColorRGB %>,0.5);" href="/about/<%= bandMemberURL %>">
-        <div class="unslantDiv">
+    <a class="bandMemberNameLink fill" style="background: rgba(<%= backgroundColorRGB %>,0.5);" href="/<%= bandMemberURL %>">
+        <div class="slantedDiv">
             <h3 class="bandMemberName"><%= bandMemberName %></h3>
             <p class="instrument"><%= instrument %></p>
         </div>
