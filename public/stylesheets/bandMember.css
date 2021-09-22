@@ -1,0 +1,45 @@
+.bandMemberGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 55% 30%;
+    grid-template-areas:
+        'name name'
+        'profilePicture info'
+        'socials info';
+    height: 100%;
+    width: 100%;
+    padding: 1% 5% 5% 5%;
+}
+
+.bandMemberName {
+    grid-area: name;
+}
+
+.bandMemberPictureBorder {
+    grid-area: profilePicture;
+    height: 100%;
+    width: 100%;
+    padding: 0% 5% 5% 5%;
+}
+
+.bandMemberPicture {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+.bandMemberInfo {
+    grid-area: info;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 2%;
+}
+
+.bandMemberSocials {
+    grid-area: socials;
+    display: flex;
+}
