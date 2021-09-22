@@ -13,7 +13,7 @@
 
 #name {
     grid-area: name;
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Rye', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +25,8 @@
     align-items: center;
     justify-content: center;
     grid-area: logo;
+    height: 80%;
+    width: 100%;
 }
 
 #logo > img {
