@@ -1,21 +1,14 @@
-<div id="aboutGrid">
+<div id="aboutGrid" class="slantedDiv">
     <div id="aboutBand">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
             molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
             numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
             optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
-            sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-            recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
-            minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
-            quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur </p>
+            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam </p>
     </div>
-    <div id="bandMembers" class="slantedDiv">
-        <%- include('../partials/bandMemberCell', {bandMemberID: 'RyanHaley', bandMemberImage: 'ryanHaley.jpg', bandMemberName: 'Ryan Haley', bandMemberURL: 'ryanHaley', instrument: 'Guitar / Singer', backgroundColorRGB: '160,0,0'}) %>
-        <%- include('../partials/bandMemberCell', {bandMemberID: 'Joey', bandMemberImage: 'joey.jpg', bandMemberName: 'Joey Serra', bandMemberURL: 'joey', instrument: 'Guitar / Singer', backgroundColorRGB: '220,130,120'}) %>
+    <div id="bandMembers">
+        <%- include('../partials/bandMemberCell', {bandMemberID: 'RyanHaley', bandMemberImage: 'ryanHaley.jpg', bandMemberName: 'Ryan Haley', bandMemberURL: 'ryanHaley', instrument: 'Guitar / Vocals', backgroundColorRGB: '255,0,0'}) %>
+        <%- include('../partials/bandMemberCell', {bandMemberID: 'Joey', bandMemberImage: 'joey.jpg', bandMemberName: 'Joey Serra', bandMemberURL: 'joey', instrument: 'Guitar / Vocals', backgroundColorRGB: '255,111,0'}) %>
         <%- include('../partials/bandMemberCell', {bandMemberID: 'RyanDrew', bandMemberImage: 'ryanDrew.jpg', bandMemberName: 'Ryan Drew', bandMemberURL: 'ryanDrew', instrument: 'Bass', backgroundColorRGB: '50,170,40'}) %>
         <%- include('../partials/bandMemberCell', {bandMemberID: 'Cormac', bandMemberImage: 'cormac.jpg', bandMemberName: 'Cormac Egan', bandMemberURL: 'cormac', instrument: 'Drums', backgroundColorRGB: '20,70,240'}) %>
     </div>

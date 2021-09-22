@@ -3,9 +3,10 @@
     grid-template-columns: 40% 60%;
     grid-template-rows: auto;
     grid-template-areas: 'about members';
-    width: 100vw;
-    height: calc(100vh - 100px);
-    padding: 0 5% 0 5%;
+    width: 80vw;
+    height: 88%;
+    margin: 3% 0% 3% 10%;
+    background-color: rgba(0,0,0,0.7);
 }
 
 #aboutBand {
@@ -13,25 +14,33 @@
     display: flex;
     justify-content: center;
     margin: 10% 10% 0 10%;
+    color: white;
 }
 
 #bandMembers {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 100px);
+    height: 100%;
     max-height: calc(100vh - 100px);
-    padding: 5% 5% 5% 0;
 }
 
 .bandMemberCell {
     flex-grow: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 50%;
     animation-name: slideLeft;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     opacity: 0%;
+    overflow: hidden;
+}
+
+.bandMemberCellBackgroundImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    margin-left: -10%;
+    height: 100%;
+    width: 200%;
+    offset: 50%;
 }
 
 #bandMemberRyanHaley {
