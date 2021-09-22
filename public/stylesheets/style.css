@@ -5,7 +5,7 @@
 }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Mukta", Helvetica, Arial, sans-serif;
   background-image: url('/images/bandBackground.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -43,6 +43,10 @@ a {
   color: #00B7FF;
 }
 
+p {
+  font-size: 1.5em;
+}
+
 #layoutGrid {
   display: grid;
   grid-template-rows: 100px auto;
@@ -58,7 +62,6 @@ a {
 #layoutNavbar {
   grid-area: navbar;
   background: rgba(165, 42, 42, 0.4);
-  background-color: brow;
 }
 
 #layoutContent {
@@ -78,4 +81,9 @@ a {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.fill {
+  height: 100%;
+  width: 100%;
 }

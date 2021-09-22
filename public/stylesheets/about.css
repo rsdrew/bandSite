@@ -1,0 +1,118 @@
+#aboutGrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    grid-template-areas: 'about members';
+    width: 80vw;
+    height: 88%;
+    margin: 3% 0% 3% 10%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#aboutBand {
+    grid-area: about;
+    display: flex;
+    justify-content: center;
+    margin: 10% 10% 0 10%;
+    color: white;
+}
+
+#bandMembers {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: calc(100vh - 100px);
+}
+
+.bandMemberCell {
+    flex-grow: 1;
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+    overflow: hidden;
+}
+
+.bandMemberCellBackgroundImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    margin-left: -10%;
+    height: 100%;
+    width: 200%;
+    offset: 50%;
+}
+
+#bandMemberRyanHaley {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+#bandMemberJoey {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: .25s;
+}
+
+#bandMemberRyanDrew {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: .5s;
+}
+
+#bandMemberCormac {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: .75s;
+}
+
+.bandMemberName {
+    font-family: 'Permanent Marker', cursive;
+    margin-left: 10%;
+}
+
+.bandMemberNameLink {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
+.bandMemberNameLink:hover {
+    color: black;
+    opacity: 1;
+}
+
+.instrument {
+    margin-left: 10%;
+}
+
+.slantedDiv {
+    -moz-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    -ms-transform: skew(-10deg, 0deg);
+    transform: skew(-10deg, 0deg);
+}
+
+.unslantDiv {
+    -moz-transform: skew(10deg, 0deg);
+    -webkit-transform: skew(10deg, 0deg);
+    -o-transform: skew(10deg, 0deg);
+    -ms-transform: skew(10deg, 0deg);
+    transform: skew(10deg, 0deg);
+}
+
+@keyframes slideLeft {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
