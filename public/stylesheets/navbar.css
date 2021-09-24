@@ -1,11 +1,26 @@
 .navbar {
     height: 100%;
+    flex-wrap: wrap !important;
+}
+
+.navbar-nav {
+    justify-content: space-evenly;
+}
+
+#navbarPages {
+    flex: 0 0 60%;
+    flex-wrap: nowrap;
+    min-width: 500px;
+}
+
+#navbarSocials {
+    flex: 0 0 40%;
+    flex-wrap: nowrap;
 }
 
 .nav-item > * {
     font-family: 'Montserrat', sans-serif; 
     font-size: large;
-    margin: 0 40px 0 40px;
 }
 
 .socialMediaLogo {

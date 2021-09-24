@@ -1,25 +1,26 @@
-.bandMemberGrid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 15% 55% 30%;
-    grid-template-areas:
-        'name name'
-        'profilePicture info'
-        'socials info';
-    height: 100%;
+.bandMemberFlex {
+    display: flex;
+    height: 90%;
+    width: 100vw;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bandMemberNamePictureSocials {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    flex: 1 1 0px;
     width: 100%;
-    padding: 1% 5% 5% 5%;
+    min-width: 500px;
 }
 
 .bandMemberName {
-    grid-area: name;
-}
-
-.bandMemberPictureBorder {
-    grid-area: profilePicture;
-    height: 100%;
-    width: 100%;
-    padding: 0% 5% 5% 5%;
+    font-family: 'Rye', cursive;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0px;
 }
 
 .bandMemberPicture {
@@ -28,18 +29,36 @@
     height: 100%;
     width: 100%;
     background-position: center;
-}
-
-.bandMemberInfo {
-    grid-area: info;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0,0,0,0.7);
-    color: white;
-    padding: 2%;
+    flex: 5 5 0px;
+    min-height: 400px;
 }
 
 .bandMemberSocials {
     grid-area: socials;
+    padding: 1%;
     display: flex;
+    align-items: center;
+    flex: 1 1 0px;
+}
+
+.bandMemberSocialsItem {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0px;
+}
+
+.bandMemberInfo {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 2%;
+    flex: 1 1 0px;
+    min-width: 500px;
+    min-height: fit-content;
+}
+
+
+@media screen and (max-width: 1300px) {
+    body {
+        overflow: visible;
+    }
 }

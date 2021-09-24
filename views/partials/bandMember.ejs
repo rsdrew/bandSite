@@ -8,5 +8,13 @@
     <div class="bandMemberInfo">
         <p><%= info %></p>
     </div>
-    <div class="bandMemberSocials">test socials</div>
+    <div class="bandMemberSocials">
+        <% for(var i=0; i < socialImages.length; i++) { %>
+            <div class="bandMemberSocialsItem">
+                <a href="<%= socialURLs[i] %>">
+                    <img class="socialMediaLogo" src="/images/<%= socialImages[i] %>">
+                </a>
+            </div>
+        <% } %>
+    </div>
 </div>

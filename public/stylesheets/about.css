@@ -3,25 +3,26 @@
     grid-template-columns: 40% 60%;
     grid-template-rows: auto;
     grid-template-areas: 'about members';
-    width: 80vw;
-    height: 88%;
-    margin: 3% 0% 3% 10%;
-    background-color: rgba(0,0,0,0.7);
+    width: 90vw;
+    height: 98%;
+    min-height: fit-content;
+    margin-left: 4%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 #aboutBand {
     grid-area: about;
     display: flex;
     justify-content: center;
-    margin: 10% 10% 0 10%;
-    color: white;
+    margin: 10%;
+    color: black;
 }
 
 #bandMembers {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    max-height: calc(100vh - 100px);
 }
 
 .bandMemberCell {
@@ -66,14 +67,14 @@
     animation-delay: .75s;
 }
 
-.bandMemberName {
-    font-family: 'Permanent Marker', cursive;
+.aboutBandMemberName {
+    font-family: 'Rye', cursive;
     margin-left: 10%;
 }
 
 .bandMemberNameLink {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     display: flex;
     justify-content: center;
     flex-direction: column;
