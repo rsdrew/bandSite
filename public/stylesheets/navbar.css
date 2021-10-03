@@ -1,29 +1,30 @@
-.navbar {
-    height: 100%;
-    flex-wrap: wrap !important;
-}
-
-.navbar-nav {
-    justify-content: space-evenly;
-}
-
 #navbarPages {
-    flex: 0 0 60%;
-    flex-wrap: nowrap;
-    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#navbarSocials {
-    flex: 0 0 40%;
-    flex-wrap: nowrap;
+#pagesList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-item > * {
     font-family: 'Montserrat', sans-serif; 
     font-size: large;
+    color: white !important;
 }
 
-.socialMediaLogo {
-    height: 40px;
-    width: auto;
+.nav-item > *:hover {
+    color: grey !important;
+}
+
+.nav-link {
+    transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
 }

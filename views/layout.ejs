@@ -4,13 +4,6 @@
     <%- include('partials/head', {page: page}); %>
 </head>
 <body>
-    <div id="layoutFlex">
-        <div id="layoutNavbar" class="dropShadow">
-            <%- include('partials/navbar', {page: page}) %>
-        </div>
-        <div id="layoutContent">
-            <%- include(`pages/${page}`) %>
-        </div>
-    </div>
+    <%- include('pages/index') %>
 </body>
 </html>

@@ -12,7 +12,32 @@
     overflow: hidden;
 }
 
+#aboutFlex {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
 #aboutBand {
+    flex: 0 0 50%;
+    grid-area: about;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    color: black;
+}
+
+#bandMembers {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* #aboutBand {
     grid-area: about;
     display: flex;
     justify-content: center;
@@ -23,10 +48,10 @@
 #bandMembers {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .bandMemberCell {
-    flex-grow: 1;
+    flex: 0 0 25%;
     animation-name: slideLeft;
     animation-duration: 1s;
     animation-fill-mode: forwards;
