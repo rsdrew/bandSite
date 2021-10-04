@@ -1,23 +1,57 @@
+
+
 #headerSection {
-    height: 100vh;
-    width: 100vw;
     background-image: url('/images/carnivalBackground.jpg');
+    height: fit-content;
+    min-height: 100vh;
 }
 
 #blueLayer {
     background-color: rgba(11, 32, 102, 0.75);
-    height: 100%;
-    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
 }
 
 #mailingListSection {
     background-color: whitesmoke;
-    height: 200px;
-    width: 100vw;
+    min-height: 250px;
+    height: fit-content;
+    background-image: url('/images/ferrisWheel.jpg');
+    background-size: cover;
+}
+
+#greyLayer {
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 250px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+#aboutSection {
+    background-color: green;
+    height: 100px;
+}
+
+#musicSection {
+    background-color: red;
+    height: 100px;
+}
+
+#showsSection {
+    background-color: aqua;
+    height: 100px;
 }
 
 @media screen and (max-width: 750px)  {
     #headerSection {
         height: 70vh;
+        min-height: 70vh;
+    }
+
+    #blueLayer {
+        height: 70vh;
+        min-height: 70vh;
     }
 }
