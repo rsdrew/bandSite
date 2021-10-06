@@ -31,17 +31,22 @@
 
 #aboutSection {
     background-color: green;
-    height: 100px;
+    height: 400px;
 }
 
 #musicSection {
     background-color: red;
-    height: 100px;
+    height: 400px;
 }
 
 #showsSection {
     background-color: aqua;
-    height: 100px;
+    height: 400px;
+}
+
+#contactSection {
+    background-color: chartreuse;
+    height: 400px;
 }
 
 @media screen and (max-width: 750px)  {
