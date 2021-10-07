@@ -2,6 +2,7 @@
 
 #headerSection {
     background-image: url('/images/carnivalBackground.jpg');
+    background-attachment: fixed;
     height: fit-content;
     min-height: 100vh;
 }
@@ -10,14 +11,6 @@
     background-color: rgba(11, 32, 102, 0.75);
     height: fit-content;
     min-height: 100vh;
-}
-
-#mailingListSection {
-    background-color: whitesmoke;
-    min-height: 250px;
-    height: fit-content;
-    background-image: url('/images/ferrisWheel.jpg');
-    background-size: cover;
 }
 
 #greyLayer {
@@ -29,22 +22,41 @@
     padding: 50px 0 50px 0;
 }
 
-#aboutSection {
-    background-color: green;
-    height: 400px;
+#yellowLayer {
+    background-color: rgba(187, 190, 0, 0.7);
+    height: fit-content;
+    min-height: 250px;
+    padding-top: 50px;
 }
 
-#musicSection {
+#mailingListSection {
+    background-color: whitesmoke;
+    min-height: 250px;
+    height: fit-content;
+    background-image: url('/images/ferrisWheel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about {
+    background-image: url('/images/carnivalSwings.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+    min-height: 250px;
+}
+
+#music {
     background-color: red;
     height: 400px;
 }
 
-#showsSection {
+#shows {
     background-color: aqua;
     height: 400px;
 }
 
-#contactSection {
+#contact {
     background-color: chartreuse;
     height: 400px;
 }
