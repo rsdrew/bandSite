@@ -1,0 +1,33 @@
+#bandMembers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slantedDiv {
+    -moz-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    -ms-transform: skew(-10deg, 0deg);
+    transform: skew(-10deg, 0deg);
+}
+
+.unslantDiv {
+    -moz-transform: skew(10deg, 0deg);
+    -webkit-transform: skew(10deg, 0deg);
+    -o-transform: skew(10deg, 0deg);
+    -ms-transform: skew(10deg, 0deg);
+    transform: skew(10deg, 0deg);
+}
+
+
+@media screen and (max-width: 1300px) {
+    .bandMemberCell {
+        flex: 1 1 50% !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .bandMemberCell {
+    flex: 1 1 100% !important;
+    }
+}

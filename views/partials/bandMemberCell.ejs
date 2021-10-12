@@ -1,8 +1,6 @@
-<div id="bandMember<%= bandMemberID %>" class="bandMemberCell">
-    <div class="bandMemberCellBackgroundImage" style="background-image: url('/images/<%= bandMemberImage %>');">
-    <a class="bandMemberNameLink fill" style="background: rgba(<%= backgroundColorRGB %>,0.5);">
+<div id="bandMember<%= bandMemberID %>" class="bandMemberCell bandMemberCellBackgroundImage" style="background-image: url('/images/<%= bandMemberImage %>');" data-id="bandMember<%= bandMemberID %>">
+    <div class="bandMemberCellBackground">
         <h3 class="aboutBandMemberName"><%= bandMemberName %></h3>
         <p class="instrument"><%= instrument %></p>
-    </a>
     </div>
 </div>

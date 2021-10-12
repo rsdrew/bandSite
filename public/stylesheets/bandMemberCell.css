@@ -1,0 +1,91 @@
+.bandMemberCell {
+    flex: 1 1 25%;
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    height: 300px;
+    transition: all .5s ease;
+}
+
+.bandMemberCell.expand {
+    flex: 1 1 100% !important;
+    height: 600px !important;
+}
+
+.bandMemberCellBackgroundImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bandMemberCellBackground {
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: whitesmoke;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.bandMemberCellBackground:hover {
+    opacity: 1;
+}
+
+#bandMemberRyanHaley {
+    transition: all .5s ease;
+}
+
+#bandMemberRyanHaley.expand {
+    flex: 0 0 100%;
+    height: 600px;
+}
+
+#bandMemberJoey {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: .25s;
+}
+
+#bandMemberRyanDrew {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: .5s;
+}
+
+#bandMemberCormac {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: .75s;
+}
+
+.aboutBandMemberName {
+    font-family: 'Rye', cursive;
+    margin-left: 10%;
+}
+
+.bandMemberNameLink {
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
+.bandMemberNameLink:hover {
+    color: black;
+    opacity: 1;
+}
+
+.instrument {
+    margin-left: 10%;
+}
