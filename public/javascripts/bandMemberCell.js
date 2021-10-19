@@ -5,11 +5,13 @@ $(document).ready(function(){
     bandMemberCell.each(function() {
         var cell = $(this)
         cell.on('click', function (e) {
-            bandMemberClick(cell.data('id'));
+            bandMemberClick(cell.data('name'));
         })
     })
 
-    function bandMemberClick(bandMemberID) {
-        $('#' + bandMemberID).toggleClass('expand');
+    function bandMemberClick(bandMemberName) {
+        $(`#bandMember${bandMemberName}`).toggleClass('expand');
+        $(`#bandMemberDescription${bandMemberName}`).toggle();
+        $(`#bandMemberSocials${bandMemberName}`).toggle();
     }
 })

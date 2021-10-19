@@ -28,12 +28,48 @@
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: whitesmoke;
     opacity: 0.8;
     cursor: pointer;
+}
+
+.bandMemberOverview {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 5% 0 5%;
+    text-align: center;
+    min-width: 220px;
+}
+
+
+.bandMemberDescription {
+    flex: 1 1 70%;
+    padding: 5%;
+    overflow-y: auto;
+    min-width: 438px;
+    height: 600px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.bandMemberSocials {
+    grid-area: socials;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex: 1 1 0px;
+}
+
+.bandMemberSocialsItem {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0px;
 }
 
 .bandMemberCellBackground:hover {
@@ -67,9 +103,8 @@
     animation-delay: .75s;
 }
 
-.aboutBandMemberName {
+.bandMemberName {
     font-family: 'Rye', cursive;
-    margin-left: 10%;
 }
 
 .bandMemberNameLink {
@@ -86,6 +121,8 @@
     opacity: 1;
 }
 
-.instrument {
-    margin-left: 10%;
+@media screen and (max-width: 750px) {
+    .bandMemberDescription {
+        height: 382px;
+    }
 }

@@ -31,7 +31,7 @@ svg {
 }
 
 .socialMediaLogo:hover {
-    fill: grey;
+    fill: darkgray;
 }
 
 @media only screen and (max-width: 800px) {
