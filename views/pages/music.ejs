@@ -1,1 +1,9 @@
-<p>Our music will show up here.</p>
+<div id="musicWrapper">
+    <div class="headerText" id="musicHeader">
+        <h2>Music</h2>
+    </div>
+    <div id="songs">
+        <%- include('../partials/song', {songName: 'Little Boy Blue', songFilename: 'littleBoyBlue.mp3', type: 'audio/mpeg'}) %>
+        <%- include('../partials/song', {songName: 'Pixie Cut', songFilename: 'pixieCut.mp3', type: 'audio/mpeg'}) %>
+    </div>
+</div>

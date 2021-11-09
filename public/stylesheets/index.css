@@ -1,4 +1,6 @@
-
+h1, h2, h3, h4, h5, h6 {
+    
+}
 
 #headerSection {
     background-image: url('/images/carnivalBackground.jpg');
@@ -7,13 +9,20 @@
     min-height: 100vh;
 }
 
-#blueLayer {
-    background-color: rgba(11, 32, 102, 0.75);
-    height: fit-content;
-    min-height: 100vh;
+.headerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rye', cursive;
+    color: black;
 }
 
-#greyLayer {
+.blueLayer {
+    background-color: rgba(11, 32, 102, 0.75);
+    height: fit-content;
+}
+
+.greyLayer {
     background-color: rgba(255, 255, 255, 0.8);
     min-height: 250px;
     height: fit-content;
@@ -47,13 +56,16 @@
 }
 
 #music {
-    background-color: red;
-    height: 400px;
+    background-image: url(/images/carnivalBackground.jpg);
+    background-attachment: fixed;
+    height: fit-content;
+    min-height: 400px;
 }
 
 #shows {
     background-color: aqua;
-    height: 400px;
+    height: fit-content;
+    min-height: 400px;
 }
 
 #contact {
@@ -67,7 +79,7 @@
         min-height: 70vh;
     }
 
-    #blueLayer {
+    .blueLayer {
         height: 70vh;
         min-height: 70vh;
     }

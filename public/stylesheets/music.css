@@ -1,0 +1,13 @@
+#musicWrapper {
+    padding: 5%;
+}
+
+#musicHeader {
+    color: rgb(187, 190, 0);
+}
+
+#songs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
