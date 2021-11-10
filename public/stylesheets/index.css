@@ -9,6 +9,10 @@
     --maxTabletWidth: 750px;
 }
 
+p {
+    margin: 0;
+}
+
 .section {
     min-height: var(--minSectionHeight);
     height: fit-content;
@@ -81,6 +85,35 @@
     align-items: center;
     font-family: 'Rye', cursive;
     padding-bottom: 3%;
+}
+
+button {
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+    height: 40px;
+    max-width: 100px;
+    width: 100%;
+}
+
+.yellowButton {
+    color: black;
+    background-color: var(--mainYellow);
+}
+
+.yellowButton:hover {
+    color: white;
+    background-color: var(--mainBlue);
+}
+
+.blueButton {
+    color: white;
+    background-color: var(--mainBlue);
+}
+
+.blueButton:hover {
+    color: black;
+    background-color: var(--mainYellow);
 }
 
 @media screen and (max-width: 750px)  {

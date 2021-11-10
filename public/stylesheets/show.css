@@ -1,0 +1,32 @@
+.showWrapper {
+    display: flex;
+    width: 100%;
+    min-height: 75px;
+    height: fit-content;
+    align-items: center;
+    border-bottom: solid 1px black;
+}
+
+.showWrapper > div {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.showDate {
+    flex: 1 1 20%;
+}
+
+.showBuildingAndTime {
+    flex: 1 1 30%;
+}
+
+.showCityState {
+    flex: 1 1 40%;
+}
+
+.showTickets {
+    flex: 1 1 10%;
+    justify-content: flex-end !important;
+}
