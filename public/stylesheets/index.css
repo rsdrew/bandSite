@@ -1,5 +1,17 @@
-h1, h2, h3, h4, h5, h6 {
-    
+:root {
+    --mainBlue: rgb(11, 32, 102);
+    --mainYellow: rgb(187, 190, 0);
+    --backgroundBlue: rgba(11, 32, 102, 0.7);
+    --backgroundYellow: rgba(187, 190, 0, 0.85);
+    --minSectionHeight: 250px;
+
+    --maxPhoneWidth: 350px;
+    --maxTabletWidth: 750px;
+}
+
+.section {
+    min-height: var(--minSectionHeight);
+    height: fit-content;
 }
 
 #headerSection {
@@ -9,39 +21,27 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
 }
 
-.headerText {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Rye', cursive;
-    color: black;
-}
-
 .blueLayer {
-    background-color: rgba(11, 32, 102, 0.75);
+    background-color: var(--backgroundBlue);
     height: fit-content;
 }
 
 .greyLayer {
     background-color: rgba(255, 255, 255, 0.8);
-    min-height: 250px;
     height: fit-content;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0 50px 0;
+    min-height: var(--minSectionHeight);
+    width: 100%;
 }
 
-#yellowLayer {
-    background-color: rgba(187, 190, 0, 0.7);
+.yellowLayer {
+    background-color: var(--backgroundYellow);
     height: fit-content;
-    min-height: 250px;
-    padding-top: 50px;
+    min-height: var(--minSectionHeight);
+    width: 100%;
 }
 
 #mailingListSection {
     background-color: whitesmoke;
-    min-height: 250px;
-    height: fit-content;
     background-image: url('/images/ferrisWheel.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,26 +51,36 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url('/images/carnivalSwings.jpg');
     background-size: cover;
     background-attachment: fixed;
-    height: fit-content;
-    min-height: 250px;
 }
 
 #music {
     background-image: url(/images/carnivalBackground.jpg);
     background-attachment: fixed;
-    height: fit-content;
-    min-height: 400px;
 }
 
 #shows {
-    background-color: aqua;
-    height: fit-content;
-    min-height: 400px;
+    background-color: whitesmoke;
+    background-image: url(/images/ferrisWheel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #contact {
-    background-color: chartreuse;
-    height: 400px;
+    background-image: url('/images/carnivalSwings.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sectionWrapper {
+    padding: 3% 5% 5% 5%;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rye', cursive;
+    padding-bottom: 3%;
 }
 
 @media screen and (max-width: 750px)  {

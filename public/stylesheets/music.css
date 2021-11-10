@@ -1,12 +1,8 @@
-#musicWrapper {
-    padding: 5%;
+#musicSectionHeader {
+    color: var(--mainYellow);
 }
 
-#musicHeader {
-    color: rgb(187, 190, 0);
-}
-
-#songs {
+#musicSectionContent {
     display: flex;
     flex-direction: column;
     gap: 30px;

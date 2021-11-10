@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
     text-shadow: 0px 0px 30px rgb(0,0,0);
-    color: yellow;
+    color: var(--mainYellow);
 }
 
 #navbarWrapper {

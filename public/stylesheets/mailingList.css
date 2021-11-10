@@ -3,15 +3,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    min-height: var(--minSectionHeight);
+    height: fit-content;
 }
 
-#mailingListText {
-    font-size: 46px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px 0 20px;
-    text-align: center;
+#mailingListSectionHeader {
+    color: black;
 }
 
 #emailWrapper {
@@ -29,13 +26,13 @@
 
 #submitEmail {
     flex: 0 0 30%;
-    background-color: yellow;
+    background-color: var(--mainYellow);
     border-radius: 5px;
     overflow: hidden;
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
 #submitEmail:hover {
-    background-color: blue;
+    background-color: var(--mainBlue);
     color: white;
 }

@@ -8,15 +8,17 @@
     flex-wrap: wrap;
 }
 
-#aboutBand {
+#aboutSectionWrapper {
+    color: var(--mainBlue);
+}
+
+#aboutSectionContent {
     flex: 0 0 50%;
     grid-area: about;
     display: flex;
     justify-content: center;
-    padding: 1% 8% 1% 8%;
-    color: black;
 }
 
-#aboutBand > p {
+#aboutSectionContent > p {
     text-align: justify;
 }

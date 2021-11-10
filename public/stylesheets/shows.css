@@ -1,0 +1,9 @@
+#showsSectionHeader {
+    color: black;
+}
+
+#showsSectionContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30
+}
