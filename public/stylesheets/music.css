@@ -1,0 +1,9 @@
+#musicSectionHeader {
+    color: var(--mainYellow);
+}
+
+#musicSectionContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

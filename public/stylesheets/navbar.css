@@ -1,14 +1,30 @@
-.navbar {
-    height: 100%;
+#navbarPages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagesList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-item > * {
     font-family: 'Montserrat', sans-serif; 
     font-size: large;
-    margin: 0 40px 0 40px;
+    color: white !important;
 }
 
-.socialMediaLogo {
-    height: 40px;
-    width: auto;
+.nav-item > *:hover {
+    color: grey !important;
+}
+
+.nav-link {
+    transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
 }

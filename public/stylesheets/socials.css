@@ -1,0 +1,41 @@
+.nav-item {
+    padding: 0 15px 0 15px;
+}
+
+#navbarSocials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 600px;
+}
+
+#socialsList {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+svg {
+    height: 25px;
+    width: 25px;
+}
+
+
+.socialMediaLogo {
+    fill: #fff;
+    transition: fill .2s ease-in-out;
+}
+
+.socialMediaLogo:hover {
+    fill: darkgray;
+}
+
+@media only screen and (max-width: 800px) {
+    #navbarSocials {
+        width: 80vw;
+    }
+}

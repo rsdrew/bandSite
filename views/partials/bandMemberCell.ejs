@@ -1,10 +1,14 @@
-<div id="bandMember<%= bandMemberID %>" class="bandMemberCell">
-    <div class="bandMemberCellBackgroundImage unslantDiv" style="background-image: url('/images/<%= bandMemberImage %>');">
-    <a class="bandMemberNameLink fill" style="background: rgba(<%= backgroundColorRGB %>,0.5);" href="/<%= bandMemberURL %>">
-        <div class="slantedDiv">
+<div id="bandMember<%= bandMemberID %>" class="bandMemberCell bandMemberCellBackgroundImage" style="background-image: url('/images/<%= bandMemberImage %>');" data-name="<%= bandMemberID %>">
+    <div class="bandMemberCellBackground">
+        <div class="bandMemberOverview">
             <h3 class="bandMemberName"><%= bandMemberName %></h3>
             <p class="instrument"><%= instrument %></p>
+            <div id="bandMemberSocials<%= bandMemberID %>" class="bandMemberSocials" style="display:none">
+                <%- include(`../partials/socials${bandMemberID}`) %>
+            </div>
         </div>
-    </a>
+        <div id="bandMemberDescription<%= bandMemberID %>" class="bandMemberDescription" style="display: none;">
+            <p><%= description %></p>
+        </div>
     </div>
 </div>

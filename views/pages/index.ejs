@@ -1,8 +1,35 @@
-
-
-<div id="indexGrid">
-    <h1 id="name">Dirty Laundry</h1>
-    <div id="logo">
-        <img src="images/washer.png">
+<div id="mainFlex">
+    <div id="headerSection">
+        <div class="blueLayer">
+            <%- include('../partials/header') %>
+        </div>
+    </div>
+    <div id="mailingListSection" class="section">
+        <div class="greyLayer">
+            <%- include('mailingList') %>
+        </div>
+    </div>
+    <div id="about" class="section">
+        <div class="yellowLayer">
+            <%- include('about') %>
+        </div>
+    </div>
+    <div id="bandMembers" class="section">
+        <%- include('bandMembers') %>
+    </div>
+    <div id="music" class="section">
+        <div class="blueLayer">
+            <%- include('music') %>
+        </div>
+    </div>
+    <div id="shows" class="section">
+        <div class="greyLayer">
+            <%- include('shows') %>
+        </div>
+    </div>
+    <div id="contact" class="section">
+        <div class="yellowLayer">
+            <%- include('contact') %>
+        </div>
     </div>
 </div>

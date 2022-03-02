@@ -1,33 +1,129 @@
-#indexGrid {
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
-    grid-template-areas: 
-        "name name name"
-        ". logo ."
-        ". . .";
-    max-width: 100vw;
-    height: calc(100vh - 100px);
-    max-height: calc(100vh - 100px);
+:root {
+    --mainBlue: rgb(11, 32, 102);
+    --mainYellow: rgb(187, 190, 0);
+    --backgroundBlue: rgba(11, 32, 102, 0.7);
+    --backgroundYellow: rgba(187, 190, 0, 0.85);
+    --minSectionHeight: 250px;
+
+    --maxPhoneWidth: 350px;
+    --maxTabletWidth: 750px;
 }
 
-#name {
-    grid-area: name;
-    font-family: 'Rock Salt', cursive;
+p {
+    margin: 0;
+}
+
+.section {
+    min-height: var(--minSectionHeight);
+    height: fit-content;
+}
+
+#headerSection {
+    background-image: url('/images/carnivalBackground.jpg');
+    background-attachment: fixed;
+    height: fit-content;
+    min-height: 100vh;
+}
+
+.blueLayer {
+    background-color: var(--backgroundBlue);
+    height: fit-content;
+}
+
+.greyLayer {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: fit-content;
+    min-height: var(--minSectionHeight);
+    width: 100%;
+}
+
+.yellowLayer {
+    background-color: var(--backgroundYellow);
+    height: fit-content;
+    min-height: var(--minSectionHeight);
+    width: 100%;
+}
+
+#mailingListSection {
+    background-color: whitesmoke;
+    background-image: url('/images/ferrisWheel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about {
+    background-image: url('/images/carnivalSwings.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#music {
+    background-image: url(/images/carnivalBackground.jpg);
+    background-attachment: fixed;
+}
+
+#shows {
+    background-color: whitesmoke;
+    background-image: url(/images/ferrisWheel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contact {
+    background-image: url('/images/carnivalSwings.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sectionWrapper {
+    padding: 3% 5% 5% 5%;
+}
+
+.sectionHeader {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0 0 0;
+    font-family: 'Rye', cursive;
+    padding-bottom: 3%;
 }
 
-#logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: logo;
+button {
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+    height: 40px;
+    max-width: 100px;
+    width: 100%;
 }
 
-#logo > img {
-    height: 100%;
-    width: auto;
+.yellowButton {
+    color: black;
+    background-color: var(--mainYellow);
+}
+
+.yellowButton:hover {
+    color: white;
+    background-color: var(--mainBlue);
+}
+
+.blueButton {
+    color: white;
+    background-color: var(--mainBlue);
+}
+
+.blueButton:hover {
+    color: black;
+    background-color: var(--mainYellow);
+}
+
+@media screen and (max-width: 750px)  {
+    #headerSection {
+        height: 70vh;
+        min-height: 70vh;
+    }
+
+    .blueLayer {
+        height: 70vh;
+        min-height: 70vh;
+    }
 }

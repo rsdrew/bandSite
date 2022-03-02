@@ -1,0 +1,52 @@
+#headerFlex {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    min-height: 100vh;
+}
+
+#socialsWrapper {
+    flex: 1 1 10%;
+}
+
+#logo {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 40vh;
+    height: 20vw;
+}
+
+#logo > img {
+    height: 100%;
+    width: auto;
+}
+
+#nameWrapper {
+    flex: 1 1 30%;
+}
+
+#name {
+    height: 100%;
+    font-size: 12vw;
+    font-family: 'Rye', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 30px rgb(0,0,0);
+    color: var(--mainYellow);
+}
+
+#navbarWrapper {
+    flex: 1 1 20%;
+}
+
+@media screen and (max-width: 750px)  {
+
+    #headerFlex {
+        height: 70vh;
+        min-height: 70vh;
+    }
+    
+}

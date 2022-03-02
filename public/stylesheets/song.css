@@ -1,0 +1,21 @@
+
+
+.songWrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.songName {
+    flex-grow: 1 1 50%;
+    size: 5vw;
+}
+
+.musicPlayer {
+    flex-grow: 1 1 50%;
+}
+
+audio {
+    width: 100%;
+}
